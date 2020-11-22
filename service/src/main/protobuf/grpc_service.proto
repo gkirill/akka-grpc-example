@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "com.example";
+option java_outer_classname = "GrpcService";
+
+package example;
+
+service GrpcService {
+  rpc Connect (stream MessageFromConnector) returns (stream MessageToConnector) {}
+}
+
+message MessageFromConnector {
+  string payload = 1;
+}
+
+message MessageToConnector {
+  string payload = 1;
+}
+
+

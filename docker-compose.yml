@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+  grpc-service:
+    build: ./service
+    environment:
+      GRPC_PORT: 9080
+  grpc-client:
+    build: ./client
+    environment:
+      settings.grpc.host: grpc-servicexx
+      settings.grpc.port: 9080
