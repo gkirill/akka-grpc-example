@@ -14,4 +14,5 @@ From client directory run
 
 From root directory run
 
+`docker-compose build`
 `docker-compose up`

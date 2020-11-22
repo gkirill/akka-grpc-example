@@ -7,5 +7,5 @@ services:
   grpc-client:
     build: ./client
     environment:
-      settings.grpc.host: grpc-servicexx
+      settings.grpc.host: grpc-service
       settings.grpc.port: 9080
